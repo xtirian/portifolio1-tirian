@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="description" content="Portfólio de Matheus Fernandes (a.k.a Tirian). Web Developer com conhecimento em ReactJS, ReactNative">
+
+  <title>Portfólio - Matheus Fernandes Cunha</title>
+
+  <meta name="author" content="Tirian">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+  <header>
+    <!-- Bem vindo ao meu portfólio (= -->
+    <section class="container">
+      <div id="logoContainer">
+        <h1>_xTirian</h1>
+        <nav id="navContainer">
+          <ul type="none" id="navBar">
+            <li><a class="patternParagraph2" href="#services">Meus Serviços</a></li>
+            <li><a class="patternParagraph2" href="#contact">Fale Comigo</a></li>
+            <li><a class="patternParagraph2" href="#portfolio">Portifólio</a></li>
+          </ul>
+        </nav>
+      </div>
+
+    </section>
+
+    <!-- Coloquei o presentation banner no header unica e exclusivamente para manter o design. Eu queria que acompanhasse o background do cabeçalho até o primeiro banner -->
+    <section class="container">
+      <div class="preBanner">
+        <h2>Olá, meu nome é Matheus</h2>
+        <p class="patternParagraph3">Sou programador Front-End e gostaria de apresentar meu trabalho para você através deste portfólio.</p>
+        <div class="pressable pointer">
+          <a href="#services">
+            <p class="patternButtonText">Meus Serviços</p>
+          </a>
+        </div>
+      </div>
+      <div class="querryNone"></div>
+    </section>
+  </header>
+
+  <main>
+    <!-- customer  -->
+    <section class="container">
+      <div class="customerDiv">
+
+        <p class="patternParagraph2 pb" id="socialMedia" onmouseenter="MidiasOverview()">Um dia a sua marca <br>poderá estar aqui</p>
+
+
+      </div>
+      <div class="brandDiver ">
+        <img src="./assets/images/sorriso.png" alt="saudação" class="emojiEffect" id="EmojiSan" onmouseenter="Piscar()" onmouseout="Sorrir()">
+      </div>
+      <div class="brandDiver ">
+        <img src="./assets/images/sua-marca.svg" alt="marca-aqui" class="marcaAqui imgEffect">
+      </div>
+      <div class="brandDiver">
+        <img src="./assets/images/sua-marca.svg" alt="marca-aqui" class="marcaAqui imgEffect ">
+      </div>
+      <div class="brandDiver">
+        <img src="./assets/images/sua-marca.svg" alt="marca-aqui" class="marcaAqui imgEffect">
+      </div>
+    </section>
+    <!-- Service content e service grid -->
+    <section class="container">
+      <div class="servicesPresentation" id="services">
+        <p class="patternParagraph2"><span class="emphasisParagraph">Conheça</span></p>
+        <h3>Meus serviços</h3>
+        <p class="patternParagraph1">Vou ajudar a sua empresa a<br>
+          alcançar grandes resultados.</p>
+      </div>
+
+    </section>
+    <section class="container">
+      <div class="serviceGrid">
+        <img src="./assets/icones/consultoria.svg" alt="consultoria">
+        <h4>Consultoria</h4>
+        <p class="patternParagraph1">Te ajudo a organizar sua empresa<br class="querryNone">
+          e melhorar seus resultados.</p>
+      </div>
+      <div class="serviceGrid">
+        <img src="./assets/icones/marketing.svg" alt="consultoria">
+        <h4>Email Marketing</h4>
+        <p class="patternParagraph1">Gerenciar campanhas é difícil.<br class="querryNone">
+          Conte comigo para te ajudar.</p>
+      </div>
+      <div class="serviceGrid">
+        <img src="./assets/icones/sites.svg" alt="consultoria">
+        <h4>Criação de Sites</h4>
+        <p class="patternParagraph1">Desenvolvo seu site inteiro<br class="querryNone">
+          do zero e te entrego prontinho.</p>
+      </div>
+    </section>
+    <!-- email form -->
+    <section class="container bannerGrid" id="contact">
+      <div>
+        <img src="./assets/images/banner2.svg" alt="banner" class="imageBanner">
+      </div>
+      <div class="emailGrid">
+        <p class="patternParagraph2"><span class="emphasisParagraph">Economize seu tempo</span></p>
+        <h3>Ganhe mais dinheiro</h3>
+        <p class="patternParagraph1">Digite aqui seu endereço de e-mail. Eu entrarei em contato para fornecer um diagnóstico gratuito.</p>
+
+        <form action="https://formspree.io/f/xgejelyj" method="post">
+          <input type="email" name="email" id="email" placeholder="E-mail" class="patternParagraph3 emailInput" required>
+          <button type="submit" class="pressable pointer">
+            <p class="patternButtonText">Enviar</p>
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Portfolio -->
+    <section class="container">
+      <div id="portfolio">
+        <p class="patternParagraph2"><span class="emphasisParagraph">Conheça o meu trabalho</span></p>
+        <h3>Portfolio</h3>
+      </div>
+    </section>
+    <section class="container" id="potifolioGrid">
+      <div class="portifolioGrid">
+        <!-- web -->
+        <a href="https://lp-dnc-xtirian.netlify.app/" target="_blank" class="pointer">
+          <img src="./assets/portfolio/lp-dnc-web.svg" alt="lp-dnc-port" class="portImageWeb imgEffect">
+        </a>
+        <div>
+          <h4>Landing Page - Escola DNC</h4>
+          <p class="patternParagraph1">Landing Page para apresentação da Escola DNC, com inserção de vídeo da empresa, carrossel de cards e formulário para captação de Leads. Tecnologias usadas: HTML/CSS e JavaScript.</p>
+        </div>
+      </div>
+
+      <div class="portifolioGrid">
+        <a href="https://proj-agencia-digital.vercel.app/" target="_blank" class="pointer">
+          <!-- celular -->
+          <img src="./assets/portfolio/lp-agencia-phone.svg" alt="lp-dnc-port" class="portImagePhone ">
+          <!-- web -->
+          <img src="./assets/portfolio/lp-agencia-web.svg" alt="lp-dnc-port" class="portImageWeb imgEffect">
+        </a>
+        <div>
+          <h4>Landing Page - Agência de Marketing</h4>
+          <p class="patternParagraph1">Landing Page para apresentação de Serviços. A intenção era usar o conceito de StateHook para mudar as classes e criar o efeito de modo noturno ao clicar no botão. Tecnologias usadas: ReactJS, JavaScript, HTML/CSS.</p>
+        </div>
+      </div>
+
+      <div class="portifolioGrid">
+        <a href="http://react-projeto1-otica.vercel.app/" target="_blank" class="pointer">
+          <!-- celular -->
+          <img src="./assets/portfolio/otica-phone.svg" alt="lp-dnc-port" class="portImagePhone ">
+          <!-- web -->
+          <img src="./assets/portfolio/otica-web.svg" alt="lp-dnc-port" class="portImageWeb imgEffect">
+        </a>
+        <div>
+          <h4>Landing Page - Ótica</h4>
+          <p class="patternParagraph1">Landing Page para apresentação serviço de ótica e apresentação de produtos em grade. Tecnologias usadas: ReactJS, JavaScript, HTML/CSS.</p>
+        </div>
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer>
+    <div>
+      <a href="https://github.com/xtirian" target="_blank">
+        <img src="./assets//images/github.png" alt="midias" class="midias imgEffect pointer">
+      </a>
+      <a href="https://www.linkedin.com/in/mf-cunha/" target="_blank">
+        <img src="./assets//images/linkedin.png" alt="midias" class="midias imgEffect pointer">
+      </a>
+    </div>
+    <p class="patternParagraph1">Copyright 2023 &#169 <span class="emphasisParagraph">xTirian</span> </p>
+
+  </footer>
+
+  <script src="index.js"></script>
+</body>
+
+</html>

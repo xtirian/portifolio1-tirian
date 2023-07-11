@@ -1,0 +1,372 @@
+/* GLOBALS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: "Poppins", sans-serif;
+
+  color: #070f18;
+}
+
+header,
+main,
+footer {
+  padding: 0 10%;
+}
+
+header {
+  background-color: #ffb097;
+
+  background-image: url(./assets/images/logo.svg);
+  background-size: contain;
+  background-position: top;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+/* TEXT PATTERNS */
+h1 {
+  font-size: 28px;
+  line-height: 42px;
+
+  color: #070f18;
+}
+h2 {
+  font-size: 55px;
+  line-height: 82.5px;
+
+  color: #000000;
+}
+h3 {
+  font-size: 36px;
+  line-height: 54px;
+  font-weight: bold;
+
+  color: #000000;
+}
+h4 {
+  font-size: 20px;
+  line-height: 30px;
+
+  color: #070f18;
+
+  padding-top: 7.5%;
+}
+.emphasisParagraph {
+  color: #f75c4e;
+  font-weight: bold;
+}
+.patternParagraph1 {
+  font-size: 16px;
+  line-height: 32px;
+  color: #575455;
+  margin: 2% 0;
+}
+.patternParagraph2 {
+  font-size: 16px;
+  line-height: 24px;
+  color: #070f18;
+}
+.patternParagraph3 {
+  font-size: 16px;
+  line-height: 32px;
+  color: #070f18;
+  margin: 2% 0;
+}
+
+.patternButtonText {
+  color: #fff;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: bold;
+}
+
+.pb {
+  font-weight: bold;
+}
+/* PAGE PATTERNS */
+.container {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 1fr;
+}
+.pressable {
+  background-color: #f75c4e;
+  width: 180px;
+  border-radius: 24px;
+  /* a border radius vai ser por padrão 50% da Heigth  */
+
+  border-width: 0;
+  
+  text-align: center;
+
+  padding: 10px 0;
+  margin: 5% 0;
+}
+.pressable:hover{
+  background-color: #f77b5f;
+}
+.pressable:active{
+  background-color: #df3a3a;
+}
+.pressable a {  
+  text-decoration: none;
+}
+.pointer{
+  cursor: pointer;
+}
+.imgEffect:hover{
+  transform: scale(1.1);
+  transition-duration: 0.4s;
+}
+.midias{ 
+  max-height: 50px; 
+  margin-left: 15px;}
+
+/* NAVIGATION */
+
+#logoContainer {
+  display: flex;
+  justify-content: space-between;
+
+  padding: 2% 0;
+}
+#navContainer{
+  min-width: 70%;
+} 
+
+#navBar {
+  width: 100%;
+  text-align: right;
+}
+#navBar li {
+  display: inline-block;
+
+  padding: 0 5%;
+  margin-left: 1%;
+
+  background-color: rgba(255, 255, 255, 0.5);
+
+  border-radius: 5px;
+}
+#navBar li:hover {
+  transform: scale(1.1);
+  transition-duration: 0.2s;
+}
+#navBar a {
+  text-decoration: none;
+}
+/* PRESENTATION BANNER */
+.preBanner {
+  height: 400px;
+  margin: 15% 0;
+
+
+  max-width: 470px;
+}
+/* CUSTOMER BANNER */
+.customerDiv {
+  display: flex;
+  align-items: center;
+}
+.brandDiver {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+
+  max-height: 120px;
+}
+.marcaAqui {
+  height: 100px;
+}
+.emojiEffect{
+  max-height: 50px;
+  align-self: center;
+}
+
+/* SERVICE PRESENTATION */
+
+.servicesPresentation {
+  padding-top: 5%;
+  text-align: center;
+}
+.serviceGrid {
+  text-align: center;
+  padding: 15% 0;
+}
+.serviceGrid:hover{
+  background-color: #ffb097;
+}
+
+/* E-mail Banner */
+.bannerGrid {
+  padding: 5% 0;
+}
+.imageBanner{
+  max-width: 100%;
+}
+
+.emailGrid{
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+
+  padding: 0 15%;
+}
+
+form {
+  width: 100%;
+  margin: 5% 0;
+}
+
+.emailInput {
+  background-color: #F5F6FB;
+  border-width: 0;
+  border-radius: 25px;
+
+  width: 100%;
+  padding: 12px 20px ;
+
+
+}
+
+.emailInput:focus{
+  border: 1px solid #f75c4e;
+  outline: none;
+}
+
+/* PORTFOLIO */
+
+.portifolioGrid{
+  margin: 10% 0;
+  padding: 5% 10%;
+
+  text-align: center;
+
+  position: relative;
+
+}
+
+.portImageWeb{
+  width: 80%;
+}
+
+.portImagePhone {
+  width:25%;
+  position:absolute;
+  
+  left: 5%;
+  top: 5%;
+}
+
+/* O efeito no celular eu quero que seja mais rápido para dar uma impressão de dinamicidade, não ser tudo padrão e mecânico */
+.portImagePhone:hover {
+  transform: scale(1.15);
+  transition-duration: 0.25s;
+}
+
+/* Footer */
+
+footer{
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  text-align: center;
+  padding: 10px;
+}
+
+@media screen and (max-width: 1080px) {
+  .patternParagraph1,
+  .patternParagraph2,
+  .patternParagraph3,
+  .patternParagraph4 {
+    font-size: 14px;
+    line-height: 24px;
+  }
+ 
+
+  h1 {
+    font-size: 24px;
+    line-height: 42px;
+  
+    color: #070f18;
+  }
+  h2 {
+    font-size: 48px;
+    line-height: 76px;
+  
+    color: #000000;
+  }
+  h3 {
+    font-size: 32px;
+    line-height: 54px;
+    font-weight: bold;
+  
+    color: #000000;
+  }
+  h4 {
+    font-size: 16px;
+    line-height: 30px;
+  
+    color: #070f18;
+  
+    padding-top: 7.5%;
+  }
+
+  
+}
+
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 20px;
+    line-height: 36px;
+  
+    color: #070f18;
+  }
+  h2 {
+    font-size: 44px;
+    line-height: 60px;
+  
+    color: #000000;
+  }
+  h3 {
+    font-size: 28px;
+    line-height: 48px;
+    font-weight: bold;
+  
+    color: #000000;
+  }
+  h4 {
+    font-size: 14px;
+    line-height: 24px;
+  
+    color: #070f18;
+  
+    padding-top: 7.5%;
+  }
+
+  .pb {
+    font-weight: 400;
+  }
+
+  .querryNone{
+    display: none;
+  }
+
+  .preBanner{
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+
+  margin: 10% 0;
+  height: 400px;
+  }
+
+  .pressable{
+    width: 150px;
+  }
+}
